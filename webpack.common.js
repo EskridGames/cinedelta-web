@@ -52,7 +52,10 @@ const config = {
         modules: [
             path.resolve(__dirname, 'src'),
             path.resolve(__dirname, 'node_modules')
-        ]
+        ],
+        alias: {
+            '@jellyfin/ux-web': path.resolve(__dirname, 'overrides/assets/images')
+        }
     },
     plugins: [
         new DefinePlugin({
